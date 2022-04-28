@@ -1,4 +1,4 @@
-@media(prefers-color-scheme:dark){
+@media(prefers-color-scheme:light){
   :root{
     --banner-img:url(../img/newbanner.jpg);
     --background-color: rgb(255, 255, 255);
@@ -14,7 +14,7 @@
   }
 }
 
-@media(prefers-color-scheme:light){
+@media(prefers-color-scheme:dark){
   :root{
     --banner-img:url(../img/newbannerdar.jpg);
     --btn-transparent:transparent;
@@ -34,7 +34,13 @@ body {
   background-color: var(--background-color);
   font-family:system-ui;
 }
-
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background: linear-gradient(transparent,blue);
+}
 /* ==================
  *
  *  section Class 
@@ -75,7 +81,6 @@ body {
 {
   font-size: 30px;
   font-weight: 600;
-  color: #fff;
   text-transform: uppercase;
   text-align: center;
   font-family: system-ui;
@@ -85,7 +90,6 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 100;
-  color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
