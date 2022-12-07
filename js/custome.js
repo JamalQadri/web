@@ -3,7 +3,7 @@ function banner(){
 }
 function sendmail(){var name = $('#Name').val();var email = $('#Sender').val();var subject = $('#Subject').val();var message = $('#Message').val();if(name=="" || email=="" || subject=="" || message==""){alert('Please fill all the field');}
 	else{var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br><br>Message: '+message;
-	Email.send({SecureToken:"46760bfe-d71d-4094-a706-70f93858e11b",To: 'qphpdeveloper@gmail.com', From: 'qadrij688@gmail.com',Subject: "New message on Jamalsq website from "+name,Body: Body}).then(message =>{if(message=='OK')
+	Email.send({SecureToken:"46760bfe-d71d-4094-a706-70f93858e11b",To: 'qphpdeveloper@gmail.com', From: 'jsqadrij688@gmail.com',Subject: "New message on Jamalsq website from "+name,Body: Body}).then(message =>{if(message=='OK')
 	{swal({
 		  title: "Your mail has been sent",
 		  text: "Thank you for connecting us, we will contect you as soon as possible",
